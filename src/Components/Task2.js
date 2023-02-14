@@ -51,7 +51,6 @@ export const Task2 = () => {
             </Form>
             <br/>
             <br/>
-            <h2>Your Addition Result (From Server) is: </h2>
             <h2>Your Addition Result (From ReactJs) is: {result1} </h2>
 
 
