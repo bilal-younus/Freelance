@@ -29,7 +29,7 @@ export const Task2 = () => {
 
     return (
         <>
-            <Form>
+            <Form className="ms-5">
                 <Form.Group as={Row} className="mb-3 custom-select" controlId="formPlaintextPassword">
                     <Form.Label column sm="2">
                         Enter First Number:
