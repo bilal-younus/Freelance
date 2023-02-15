@@ -8,32 +8,17 @@ export const Task2 = () => {
     let [val1, setVal1] = useState(0);
     let [val2, setVal2] = useState(0);
     let [result1, setResult1] = useState(0);
-    let [serverResult,setServerResult]=useState(0);
-
     const value1 = (e)=>
     {
-        setVal1(e.target.value)
+          setVal1(e.target.value)
     }
     const value2 = (e)=>
     {
-        setVal2(e.target.value)
+          setVal2(e.target.value)
 
     }
-
     const click = ()=>
     {
-
-        fetch(`http://localhost:3000/sumNumbers/${val1}/${val2}`)
-            .then(response => {
-                console.log(response);
-                return response.json();
-            })
-            .then(data => {
-                console.log(data)
-                setServerResult(data.totalSum);
-            })
-            .catch(error => console.error(error));
-
         let add = parseInt(val1) + parseInt(val2)
         setResult1(add)
         setVal1("")
@@ -67,7 +52,7 @@ export const Task2 = () => {
             <br/>
             <br/>
             <h2>Your Addition Result (From ReactJs) is: {result1} </h2>
-            <h2>Your Addition Result (From Server) is: {serverResult} </h2>
+
 
         </>
     )
